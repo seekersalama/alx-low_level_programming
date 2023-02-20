@@ -21,6 +21,8 @@ int main(void)
 			{
 				for (q = '0'; q <= '9'; q++)
 				{
+					if (n == '0' && m == '0' && p == '0' && q == '0')
+						continue;
 					putchar(n);
 					putchar(m);
 					putchar(' ');
@@ -28,8 +30,6 @@ int main(void)
 					putchar(q);
 					if (n == '9' && m == '8' && p == '9' && q == '9')
 						break;
-					if (n == '0' && m == '0' && p == '0' && q == '0')
-						continue;
 					putchar(',');
 					putchar(' ');
 				}
