@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-	char n;
-	char m;
+	int n;
+	int m;
 
 	for (n = '0'; n <= '9'; n++)
 	{

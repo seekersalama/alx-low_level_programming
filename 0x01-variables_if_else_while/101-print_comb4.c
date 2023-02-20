@@ -9,9 +9,9 @@
  */
 int main(void)
 {
-	char n;
-	char m;
-	char p;
+	int n;
+	int m;
+	int p;
 
 	for (n = '0'; n <= '7'; n++)
 	{
