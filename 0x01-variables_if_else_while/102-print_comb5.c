@@ -15,25 +15,25 @@ int main(void)
 
 	for (n = '0'; n <= '9'; n++)
 	{
-		for (m = n + 1; m <= '8'; m++)
+		for (m = '0'; m <= '8'; m++)
 		{
-			putchar(n);
-			putchar(m);
-			putchar(' ');
 			for (p = '0'; p <= '9'; p++)
 			{
 				for (q = '0'; q <= '9'; q++)
 				{
-				putchar(p);
-				putchar(q);
+					putchar(n);
+					putchar(m);
+					putchar(' ');
+					putchar(p);
+					putchar(q);
+					if (n == '9' && m == '8' && p == '9' && q == '9')
+						break;
+					putchar(',');
+					putchar(' ');
 				}
 			}
-			if (n == '9' && m == '8' && p == '9' && q == '9')
-				break;
-			putchar(',');
 		}
-		putchar(' ');
+		putchar('\n');
 	}
-	putchar('\n');
-	return (0);
+		return (0);
 }

@@ -4,6 +4,7 @@
  * main - Entry point of the code
  * n: char  variable
  * m: char variable
+ * p: char variable
  * Return: Always 0 for success
  */
 int main(void)
@@ -12,11 +13,11 @@ int main(void)
 	char m;
 	char p;
 
-	for (n = '0'; n <= '9'; n++)
+	for (n = '0'; n <= '7'; n++)
 	{
-		for (m = n + 1; m <= '9'; m++)
+		for (m = n + 1; m <= '8'; m++)
 		{
-			for (p = m + 1; m <= '9'; p++)
+			for (p = m + 1; p <= '9'; p++)
 			{
 				putchar(n);
 				putchar(m);
