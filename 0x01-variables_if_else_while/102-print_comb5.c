@@ -21,7 +21,7 @@ int main(void)
 			{
 				for (q = '0'; q <= '9'; q++)
 				{
-					if (( n == m ) && ( p == q))
+					if ((n == m) && (p == q))
 						continue;
 					if ((n == p) && (m == p))
 						continue;
@@ -38,6 +38,6 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');	
+	putchar('\n');
 	return (0);
 }
