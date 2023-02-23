@@ -3,11 +3,11 @@
 #include <time.h>
 /**
  *positive_or_negative - Entry point of the code
- * n: interger variable
+ *@n: interger variable
  *
  * Return: Always 0 for success
  */
-void positive_or_negative (int n)
+void positive_or_negative(int n)
 {
 	/* your code goes there */
 	if (n > 0)
