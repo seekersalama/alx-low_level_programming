@@ -1,10 +1,9 @@
+#include "main.h"
 /**
  * print_alphabet - Entry point
- * @c: input char to _putrchar
  *
  * Return: Always 0 (Success)
  */
-int _putchar(char c);
 
 void print_alphabet(void)
 {
