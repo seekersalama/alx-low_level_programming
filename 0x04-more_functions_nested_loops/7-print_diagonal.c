@@ -1,6 +1,5 @@
 /**
  * print_diagonal - check the code.
- * @n: int input
  * @c: char input var
  * Return: void
  */
