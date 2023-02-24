@@ -1,6 +1,6 @@
 /**
  * print_numbers - check the code.
- * @n: char input to _putchar
+ * @c: char input to _putchar
  * Return: product
  */
 int _putchar(char c);
