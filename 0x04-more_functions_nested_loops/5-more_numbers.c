@@ -8,13 +8,12 @@ void more_numbers(void)
 	char *number;
 	int n, m;
 
-	number = "01234567891011121314";
+	number = "01234567891011121314\n";
 	for (m = 0; m < 10; m++)
 	{
 		for (n = 0; number[n] != '\0'; n++)
 		{
 			_putchar(number[n]);
 		}
-		_putchar('\n');
 	}
 }
