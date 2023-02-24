@@ -1,5 +1,6 @@
 /**
  * more_numbers - check the code.
+ * @c: char input to
  * Return: product
  */
 int _putchar(char c);
