@@ -9,10 +9,9 @@ void print_numbers(void)
 	 char *number;
 	 int n;
 
-	number = "0123456789";
+	number = "0123456789\n";
 	for (n = 0; number[n] != '\0'; n++)
 	{
 		_putchar(number[n]);
 	}
-	_putchar('\n');
 }
