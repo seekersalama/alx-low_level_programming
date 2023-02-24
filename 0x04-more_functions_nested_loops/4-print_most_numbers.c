@@ -9,10 +9,9 @@ void print_most_numbers(void)
 	char *number;
 	int n;
 
-	number = "01356789";
+	number = "01356789\n";
 	for (n = 0; number[n] != '\0'; n++)
 	{
 		_putchar(number[n]);
 	}
-	_putchar('\n');
 }
