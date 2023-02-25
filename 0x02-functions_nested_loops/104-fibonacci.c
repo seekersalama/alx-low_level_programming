@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long unsigned int a, b, accu;
+	unsigned long a, b, accu;
 	int m;
 
 	accu = 0;
