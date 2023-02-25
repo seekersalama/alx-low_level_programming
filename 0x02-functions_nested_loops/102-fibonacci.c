@@ -13,7 +13,7 @@ int main(void)
 	accu = 0;
 	a = 0;
 	b = 1;
-	for (m = 1; m < 51 ; m++)
+	for (m = 1; m < 50 ; m++)
 	{
 		accu = a + b;
 		printf("%ld, ", accu);

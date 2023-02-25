@@ -13,13 +13,13 @@ int main(void)
 	accu = 0;
 	a = 0;
 	b = 1;
-	for (m = 1; m < 100 ; m++)
+	for (m = 1; m < 98 ; m++)
 	{
 		accu = a + b;
-		printf("%1.0f, ", accu);
+		printf("%.0f, ", accu);
 		a = b;
 		b = accu;
 	}
-	printf("%1.0f\n", a + b);
+	printf("%.0f\n", a + b);
 	return (0);
 }
