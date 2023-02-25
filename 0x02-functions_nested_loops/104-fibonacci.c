@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	float a, b, accu;
+	long unsigned int a, b, accu;
 	int m;
 
 	accu = 0;
@@ -16,10 +16,10 @@ int main(void)
 	for (m = 1; m < 98 ; m++)
 	{
 		accu = a + b;
-		printf("%.0f, ", accu);
+		printf("%lu, ", accu);
 		a = b;
 		b = accu;
 	}
-	printf("%.0f\n", a + b);
+	printf("%lu\n", a + b);
 	return (0);
 }
