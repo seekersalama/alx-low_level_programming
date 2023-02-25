@@ -11,7 +11,7 @@ int main(void)
 	char *buzz = "Buzz";
 	char *fizzbuzz = "FizzBuzz";
 
-	for (m = 1; m <= 100 ; m++)
+	for (m = 1; m < 100 ; m++)
 	{
 		if (m % 15 == 0)
 			printf("%s ", fizzbuzz);
@@ -22,6 +22,7 @@ int main(void)
 		else
 			printf("%d ", m);
 	}
+	printf("%s", buzz);
 	printf("\n");
 	return (0);
 }
