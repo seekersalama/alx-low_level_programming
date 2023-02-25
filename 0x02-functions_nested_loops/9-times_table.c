@@ -23,15 +23,21 @@ void times_table(void)
 				_putchar (p + '0');
 				_putchar (q + '0');
 				_putchar (',');
-			} else
+			}else
 			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(t + '0');
-				_putchar(',');
+				if (j == 0)
+				{
+					_putchar(t + '0');
+					_putchar(',');
+				} else
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(t + '0');
+					_putchar(',');
+				}
 			}
 		}
 		_putchar('\n');
 	}
-
 }
