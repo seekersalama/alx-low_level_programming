@@ -4,7 +4,6 @@
  * @n: input char to _putrchar
  * Return: the sum of two numer
  */
-
 int _putchar(char n);
 void print_times_table(int n)
 {
@@ -22,7 +21,7 @@ void print_times_table(int n)
 			p = t / 10;
 			q = t % 10;
 			p1 = t / 100;
-			q1 = (t % 100) % 10;
+			q1 = (t % 100) / 10;
 			if (t >= 10 && t < 100)
 			{
 				_putchar (' ');

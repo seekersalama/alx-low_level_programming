@@ -17,6 +17,6 @@ int main(void)
 	_putchar('\n');
 	 print_times_table(14);
 	_putchar('\n');
-	 print_times_table(15);
+	 print_times_table(13);
 	return (0);
 }
