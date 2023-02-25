@@ -13,7 +13,7 @@ int main(void)
 	accu = 0;
 	a = 0;
 	b = 1;
-	for (m = 1; m < 98 ; m++)
+	for (m = 1; m < 100 ; m++)
 	{
 		accu = a + b;
 		printf("%1.0f, ", accu);

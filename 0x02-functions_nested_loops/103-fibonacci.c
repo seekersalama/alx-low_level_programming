@@ -14,7 +14,7 @@ int main(void)
 	accu1 = 0;
 	a = 0;
 	b = 1;
-	for (m = 1; m < 32 ; m++)
+	for (m = 1; m < 33 ; m++)
 	{
 		accu = a + b;
 		if (accu % 2 == 0)
