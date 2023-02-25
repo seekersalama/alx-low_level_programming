@@ -20,7 +20,6 @@ int main(void)
 		a = b;
 		b = accu;
 	}
-
 	printf("%1.0f\n", a + b);
 	return (0);
 }
