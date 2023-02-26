@@ -3,7 +3,6 @@
 /**
  * main - print_most_numbers.
  * @val: unsigned long input to putchar
- * 3 4019 50829599
  * Return: product
  */
 
@@ -14,7 +13,6 @@ int main(void)
 	unsigned long  int prime, ret;
 	unsigned long int check, second, i;
 
-	/* second = 612852475143 / (3 * 4019); */
 	second = 612852475143;
 	for (i = 2; i <= second; i++)
 	{
@@ -31,13 +29,12 @@ int main(void)
 }
 
 
-int isprime(unsigned long val)
-
-/*
+/**
  * isprime - find prime number.
  * @val: unsigned long input to putchar
- * 3 4019 50829599
+ * Return: 1 for prime number
  */
+int isprime(unsigned long val)
 {
 	unsigned long int maxtest, i;
 	int ret;
