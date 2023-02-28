@@ -1,0 +1,15 @@
+/**
+ * swap_int - check the code
+ *@a: int * input pointer
+ *@b: int * input pointer
+ * Return: Always 0.
+ */
+
+void swap_int(int *a, int *b)
+{
+	int temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
