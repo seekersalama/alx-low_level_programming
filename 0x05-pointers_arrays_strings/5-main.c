@@ -10,7 +10,7 @@ int main(void)
 {
 	char s[10] = "My School";
 	char s1[11] = "My iSchool";
-	char s2[13] = "Mine School";
+	char s2[13] = "Holberton";
 
 	printf("\n%s\n", "string 1:");
 	printf("%s\n", s);
