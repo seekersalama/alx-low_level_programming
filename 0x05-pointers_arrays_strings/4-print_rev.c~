@@ -2,7 +2,7 @@
 
 /**
  * print_rev - check the code
- *@*str char * input pointer
+ *@str:char * input pointer
  * Return: Always 0.
  */
 
