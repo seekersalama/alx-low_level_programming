@@ -8,8 +8,7 @@
  */
 int main(void)
 {
-	char s[10] = "My School"
-	;
+	char s[10] = "My School";
 	char s1[11] = "My iSchool";
 	char s2[13] = "Holberton";
 
