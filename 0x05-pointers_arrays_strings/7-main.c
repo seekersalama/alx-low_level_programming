@@ -11,5 +11,9 @@ int main(void)
 
 	str = "0123456789";
 	puts_half(str);
+	_putchar('\n');
+	str = "123456789";
+	puts_half(str);
+	_putchar('\0');
 	return (0);
 }

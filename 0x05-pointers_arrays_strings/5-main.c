@@ -11,6 +11,7 @@ int main(void)
 	char s[10] = "My School";
 	char s1[11] = "My iSchool";
 	char s2[13] = "Mine School";
+
 	printf("\n%s\n", "string 1:");
 	printf("%s\n", s);
 	rev_string(s);

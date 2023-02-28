@@ -8,9 +8,13 @@
 void print_array(int *a, int n)
 {
 	int length;
-	for (length = 0; length < n - 1; length++)
+
+	if (n > 0)
 	{
-		printf("%d, ", *(a + length));
+		for (length = 0; length < n - 1; length++)
+			{
+				printf("%d, ", *(a + length));
+			}
+		printf("%d\n", *(a + length));
 	}
-	printf("%d\n", *(a + length));
 }
