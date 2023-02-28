@@ -12,10 +12,11 @@ void print_rev(char *str)
 
 	length = _strlen(str) - 1;
 
-	do {
+	while (length >= 0)
+	{
 		_putchar(str[length]);
 		length--;
-	} while (length >= 0);
+	}
 	_putchar('\n');
 }
 
