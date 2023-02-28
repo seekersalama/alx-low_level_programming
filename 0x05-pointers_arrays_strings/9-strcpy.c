@@ -1,0 +1,39 @@
+#include "main.h"
+/**
+* _strcpy - check the code
+*@dest:char * input pointer
+*@src:char * input pointer
+* Return: char * 0.
+*/
+
+char *_strcpy(char *dest, char *src)
+{
+	int length;
+	char temp;
+	int i;
+
+	length = _strlen(src);
+	for (i = 0; i < length; i++)
+	{
+		temp = src[i];
+		*(dest + i) = temp;
+	}
+
+	return (dest);
+}
+/**
+* _strlen - check the code
+*@s: char * input pointer
+* Return: Always 0.
+*/
+int _strlen(char *s)
+{
+	int length;
+
+	length = 0;
+	while (s[length] != '\0')
+	{
+		length++;
+	}
+	return (length);
+}
