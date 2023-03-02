@@ -2,19 +2,19 @@
 #include <stdio.h>
 
 /**
- * _strcat - check the code
+ * _strncat - check the code
  *@dest: char * input 1
   *@src: char * input 1
  * Return - char * 
  */
-
-char *_strcat(char *dest, char *src)
+ 
+char *_strncat(char *dest, char *src, int n)
 {
   int lensrc, i;
   
   lensrc = _strlen(src);
   printf("lenght of \"%s\": %d\n",src, lensrc);
-  for (i = 0 ; i < lensrc || src[i] != '\0' ; i++)
+  for (i = 0 ; i <= n || src[i] == '\0'; i++)
   {
     dest[lensrc + i] = src[i];
   }
@@ -38,4 +38,5 @@ int _strlen(char *s)
   }
   return (length);
 }
+
 
