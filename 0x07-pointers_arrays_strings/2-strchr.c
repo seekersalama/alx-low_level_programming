@@ -1,0 +1,21 @@
+#include "main.h"
+/**
+ * _strchr - prints buffer in hexa
+ * @s: char *the address of memory to print
+ * @c: char the size of the memory to print
+ * Return: char *
+ */
+
+char *_strchr(char *s, char c)
+{
+	char *pt;
+	int i;
+
+	pt = NULL;
+	for (i = 0; s[i] != '\0'; i += 1)
+	{
+		if (s[i] == c)
+			pt = (s + i - 1);
+	}
+	return (pt);
+}
