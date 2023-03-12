@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 	if (change <= 0)
 	{
 		printf("%d\n", 0);
-		return (1);
+		return 0;
 	}
 	for (i = 0; i < 5; i += 1)
 	{
