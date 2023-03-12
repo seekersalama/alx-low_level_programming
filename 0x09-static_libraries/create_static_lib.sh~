@@ -1,4 +1,4 @@
 #!/bin/sh
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -c *.c
+gcc -c *.c | grep .o |
 ar cr liball.a *.o
-ranlib liball.a
+mv $(ls [A-Z]*) /temp/u
