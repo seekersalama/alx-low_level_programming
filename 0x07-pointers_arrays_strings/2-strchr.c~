@@ -21,6 +21,6 @@ char *_strchr(char *s, char c)
 		}
 	}
 	if (c == '\0')
-		pt = s+i;
+		pt = s + i;
 	return (pt);
 }
