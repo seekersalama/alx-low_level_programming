@@ -20,9 +20,9 @@ int main(int argc, char **argv)
 		return (1);
 	}
 	change = atoi(argv[1]);
-	if (change < 0)
+	if (change <= 0)
 	{
-		printf("0\n");
+		printf("%d\n", 0);
 		return (1);
 	}
 	for (i = 0; i < 5; i += 1)
