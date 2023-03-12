@@ -18,7 +18,7 @@ char *_strchr(char *s, char c)
 		{
 			pt = (s + i);
 			break;
-			}
+		}
 	}
 	return (pt);
 }
