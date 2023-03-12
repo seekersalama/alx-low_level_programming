@@ -1,2 +1,0 @@
-#!/bin/sh
-ar cr liball.a  < `gcc -c *.c`
