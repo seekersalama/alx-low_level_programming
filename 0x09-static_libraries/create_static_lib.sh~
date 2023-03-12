@@ -1,4 +1,2 @@
 #!/bin/sh
-gcc -c *.c | grep .o |
-ar cr liball.a *.o
-mv $(ls [A-Z]*) /temp/u
+gcc -c *.c && ar cr liball.a *.o
