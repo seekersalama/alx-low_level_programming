@@ -28,7 +28,6 @@ char *_strstr(char *s, char *b)
 					t = NULL;
 					break;
 				}
-
 			}
 		}
 		else if (t = b && n > 0)
