@@ -31,33 +31,9 @@ int main(int argc, char **argv)
 				rem = change % array[i];
 			} else
 					rem = change % array[i];
+					change = rem;
 	}
-	if (change / 25 > 0)
-	{
-		accu = change / 25;
-		rem = change % 25;
-	} else
-		rem = change % 25;
-	if (rem > 0)
-	{
-		accu += rem / 10;
-		rem = rem % 10;
-	}
-	if (rem > 0)
-	{
-		accu += rem / 5;
-		rem = rem % 5;
-	}
-	if (rem > 0)
-	{
-		accu += rem / 2;
-		rem = rem % 2;
-	}
-	if (rem > 0)
-	{
-		accu += rem / 1;
-		rem = rem % 1;
-	}
+
 	printf("%d\n", accu);
 	return (0);
 }
