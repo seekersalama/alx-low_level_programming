@@ -16,9 +16,9 @@ unsigned int _strspn(char *s, char *b)
 		for (j = 0; b[j] != '\0'; j += 1)
 		{
 			if (s[i] == b[j])
-				t++;
+				++t;
 		}
-					if(t != 0 && s[i] == ' ')
+		if(t != 0 && s[i] == ' ')
 			break;
 	}
 	return (t);
