@@ -20,5 +20,7 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
+	if (c == '\0')
+		pt = s+i;
 	return (pt);
 }

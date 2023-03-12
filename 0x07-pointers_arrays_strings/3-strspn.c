@@ -21,5 +21,6 @@ unsigned int _strspn(char *s, char *b)
 		if (t != 0 && s[i] == ' ')
 			break;
 	}
+	if(b = )
 	return (t);
 }
