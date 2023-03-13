@@ -10,20 +10,19 @@
 
 int **alloc_grid(int width, int height)
 {
-	int i, j;
-	int (*ptt)[height] = malloc(sizeof(int[width][height]));
+	int i;
+	int **ptt;
 
-	if (!(width <= 0 || height <= 0))
+	if (width <= 0 || height <= 0)
 	{
-		printf("first if\n");
 		ptt = NULL;
 	}
+	else
+		ptt = malloc(width * sizeof(*ptt));
 	if (ptt != NULL)
 	{
-		printf("second if\n");
 		for (i = 0; i < width; i += 1)
-			for (j = 0; j < height; j += 1)
-				ptt[i][j] = 0;
+			ptt[i] = malloc(height * sizeof(*ptt[i]));
 	}
 	return (ptt);
 }
