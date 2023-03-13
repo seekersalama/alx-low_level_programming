@@ -1,0 +1,27 @@
+#include <stdlib.h>
+/**
+ * create_array - prints buffer in hexa
+ * @size: unsigned int
+ * @c: char
+ *
+ * Return: Nothing.
+ */
+
+char *create_array(unsigned int size, char c)
+{
+	char *pt;
+	unsigned int i;
+
+	if (size == 0)
+		pt = NULL;
+	else
+	{
+		pt = malloc(sizeof(char) * size);
+	}
+	if (pt != NULL)
+	{
+		for (i = 0; i < size; i += 1)
+			*(pt + i) = c;
+	}
+	return (pt);
+}

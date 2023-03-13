@@ -1,0 +1,12 @@
+
+/**
+* alloc_grid - prints buffer in hexa
+* @width: int
+* @height: int
+*
+* Return: int **
+*/
+
+void free_grid(int **grid, int height)
+{
+}
