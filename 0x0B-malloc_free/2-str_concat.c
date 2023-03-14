@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 				*(pt + i) = *(s1 + i);
 		}
 		*(pt + i) = '\0';
-	} else
+	} else if (s2 != NULL)
 	{
 		size = sizeof(s2);
 		pt = malloc(sizeof(char) * size);
@@ -44,6 +44,8 @@ char *str_concat(char *s1, char *s2)
 				*(pt + j) = *(s2 + j);
 		}
 		*(pt + j) = '\0';
-	}
+	} else
+		pt = NULL;
 	return (pt);
 }
+
