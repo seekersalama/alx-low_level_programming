@@ -44,8 +44,12 @@ char *str_concat(char *s1, char *s2)
 				*(pt + j) = *(s2 + j);
 		}
 		*(pt + j) = '\0';
-	} else
-		pt = NULL;
+	} else if (s1 == NULL && s2 == NULL)
+	{
+		size = 1;
+		pt = malloc(sizeof(char) * size);
+		if (pt != NULL)
+			*(pt + size - 1) = '\0';
+	}
 	return (pt);
 }
-
