@@ -7,7 +7,6 @@
  *
  * Return: int **
  */
-
 int **alloc_grid(int width, int height)
 {
 	int i, j;
@@ -43,9 +42,9 @@ int **alloc_grid(int width, int height)
 	}
 	if (sig)
 	{
-		free(*ptt);
 		free(ptt);
 		ptt = NULL;
 	}
 	return (ptt);
 }
+
