@@ -18,7 +18,8 @@ int main(void)
 	}
 	printf("%s\n", s);
 	free(s);
-	s = _strdup(NULL);
+
+	s = _strdup("ALX SE");
 	if (s == NULL)
 	{
 		printf("failed to allocate memory\n");
@@ -27,7 +28,7 @@ int main(void)
 	printf("%s\n", s);
 	free(s);
 
-	s = _strdup("ALX SE");
+	s = _strdup("");
 	if (s == NULL)
 	{
 		printf("failed to allocate memory\n");
