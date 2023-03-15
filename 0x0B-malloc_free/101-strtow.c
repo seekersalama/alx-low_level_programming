@@ -8,30 +8,32 @@
 
 char **strtow(char *str)
 {
-	char **pt;
+	char **pt; *temp;
 	int i, j;
 	int step, *index;
 	step = -1;
-	j = 0;
-	index = (int *) malloc(sizeof(int) * 20);
+	index = (int *) malloc(sizeof(int));
 	if (str != NULL || str[0] != '\0')
 	{
-		for (i = 0; str[i] != '\0'; i++)
+		for (i = 0, j = 1; str[i] != '\0'; i++, j++)
 		{
-			if(str[i] == ' ')
-				if(str[i + 1] != ' ')
+			temp = "\0";
+			*(pt + i) = malloc(step * sizeof(char* ));
+			if (str[i] == ' ' && str[j] != ' ' )
+			{
+				for (t = 0; str[j] != ' '; t++, j++, i++)
 				{
-					step++;
-					*(index++) = i+1;
+					*(temp + t) = str[t];
 				}
+				*(temp + t) = '\n';
+			}
+			*(pt + i) = temp;
 		}
 		printf("%d\n", step);
 		pt = malloc(step * sizeof(char* ));
 		for (i = 0; i < step; i += 1)
 		{
-
 		}
-
 	}
 	else
 		return (NULL);
