@@ -42,18 +42,20 @@ int main(void)
 		return (1);
 	}
 	print_grid(grid, 6, 4);
+
 	printf("\n");
 	grid[0][3] = 98;
 	grid[3][4] = 402;
 	print_grid(grid, 6, 4);
-
 	printf("\n");
+
 	grid = alloc_grid(48, 32);
 	if (grid == NULL)
 	{
 		return (1);
 	}
 	print_grid(grid, 48, 32);
+
 	printf("\n");
 	grid = alloc_grid(128, 128);
 	if (grid == NULL)
@@ -63,4 +65,3 @@ int main(void)
 	print_grid(grid, 128, 128);
 	return (0);
 }
-
