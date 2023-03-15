@@ -27,7 +27,7 @@ char *argstostr(int ac, char **av)
 			}
 		}
 		else
-			return NULL;
+			return (NULL);
 	}
 	else
 		return (NULL);
