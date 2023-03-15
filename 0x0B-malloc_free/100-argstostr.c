@@ -15,6 +15,8 @@ char *argstostr(int ac, char **av)
 	step = 0;
 	if (ac != 0 && av != NULL)
 	{
+		if (ac == 1)
+			ac = 2;
 		pt = (char *) malloc(sizeof(char *) * (ac - 1) - 4);
 		if (pt != NULL)
 		{
