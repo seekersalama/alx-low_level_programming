@@ -21,7 +21,10 @@ int main(int argc, char **argv)
 	}
 	change = atoi(argv[1]);
 	if (change < 0)
+	{
 		printf("0\n");
+		return (0);
+	}
 	for (i = 0; i < 5; i += 1)
 	{
 		if (change / array[i] > 0)
@@ -33,3 +36,4 @@ int main(int argc, char **argv)
 	printf("%d\n", accu);
 	return (0);
 }
+
