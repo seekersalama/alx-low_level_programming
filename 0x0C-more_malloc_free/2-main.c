@@ -37,10 +37,25 @@ int main(void)
 {
 	char *a;
 	a = _calloc(98, sizeof(char));
-	strcpy(a, "Best");
+/*	a = _calloc(0, sizeof(int));
+	a = _calloc(402, sizeof(char));
+	a = _calloc(402, sizeof(char));
+	a = _calloc(100, 0);
+	a = _calloc(50, sizeof(int));
+*/
+	strcpy(a, "0. Best");
 	strcpy(a + 4, " School! :)\n");
 	a[97] = '!';
 	simple_print_buffer(a, 98);
 	free(a);
+
+
+	a = _calloc(98, sizeof(char));
+	strcpy(a, "1. Best");
+	strcpy(a + 4, " School! :)\n");
+	a[97] = '!';
+	simple_print_buffer(a, 98);
+	free(a);
+
 	return (0);
 }

@@ -1,13 +1,10 @@
 #include <stdlib.h>
-#include <stdio.h>
 /**
  * _calloc - check the code
  *@nmemb: unsigned int
  *@size: unsigned int
- *
  * Return: void *
  */
-
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *pt;
@@ -22,5 +19,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		for (i = 0; i < nmemb * size - 1; i++)
 			*(pt + i) = 0x00;
 	}
-	return ((void *) pt);
+	return (pt);
 }
