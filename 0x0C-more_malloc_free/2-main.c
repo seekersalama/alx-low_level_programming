@@ -36,7 +36,7 @@ void simple_print_buffer(char *buffer, unsigned int size)
 int main(void)
 {
 	char *a;
-	a = _calloc(0, sizeof(int));
+	a = _calloc(98, sizeof(int));
 /*	a = _calloc(0, sizeof(int));
 	a = _calloc(402, sizeof(char));
 	a = _calloc(402, sizeof(char));
@@ -45,8 +45,10 @@ int main(void)
 */
 	strcpy(a, "Best");
 	strcpy(a + 4, " School! :)\n");
+	a[97] = '!';
 	simple_print_buffer(a, 98);
 	free(a);
+
 
 	return (0);
 }
