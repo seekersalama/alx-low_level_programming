@@ -37,8 +37,8 @@ int main(void)
 {
 	int *a;
 	int n, m;
-	n = -5;
-	m = -5;
+	n = 5;
+	m = 5;
 
 	a = array_range(n, m);
 	simple_print_buffer(a, (m - n + 1));
