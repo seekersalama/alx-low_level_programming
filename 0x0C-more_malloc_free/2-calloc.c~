@@ -21,9 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (pt != NULL)
 	{
 		for (i = 0; i < nmemb * size; i++)
-		{
 			*(pt + 1) = j;
-		}
 	}
 	return ((void *) pt);
 }
