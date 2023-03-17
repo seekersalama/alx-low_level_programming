@@ -36,9 +36,12 @@ void simple_print_buffer(int *buffer, unsigned int size)
 int main(void)
 {
 	int *a;
-	a = array_range(0, 10);
-	simple_print_buffer(a, 11);
+	int n, m;
+	n = 5;
+	m = 5;
+
+	a = array_range(n, m);
+	simple_print_buffer(a, (m - n + 1));
 	free(a);
 	return (0);
 }
-
