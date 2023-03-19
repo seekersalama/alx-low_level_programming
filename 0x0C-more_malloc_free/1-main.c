@@ -12,30 +12,30 @@ int main(void)
 	char *concat;
 
 	concat = string_nconcat("Best ", "School !!!", 6);
-	printf("1. %s\n", concat);
+	printf("1. s1 = \"Best \", s2 = \"School !!!\", n = 6 \n%s\n", concat);
 	free(concat);
 
 	concat = string_nconcat("Best ", "School", 4);
-	printf("2. %s\n", concat);
+	printf("1. s1 = \"Best \", s2 = \"School\", n = 4 \n%s\n", concat);
 	free(concat);
 
 	concat = string_nconcat("","Hello", 12);
-	printf("3. s1="" %s\n", concat);
+	printf("1. s1 = \"\", s2 = \"Hello\", n = 12 \n%s\n", concat);
 	free(concat);
 
 
 	concat =  string_nconcat("Hello", NULL, 12);
-	printf("4. s2=NULL %s\n", concat);
+	printf("1. s1 = \"Hello\", s2 = NULL, n = 12 \n%s\n", concat);
 	free(concat);
 
 	concat = string_nconcat(NULL, NULL, 10);
-	printf("5. s1_s2=NULL %s\n", concat);
+	printf("1. s1 = NULL, s2 = NULL, n = 10 \n%s\n", concat);
 	free(concat);
 
 
 	printf("\nbefore 6\n");
 	concat = string_nconcat(NULL, "Hello", 0);
-	printf("6. s1=NULL %s\n", concat);
+	printf("1. s1 = NULL, s2 = \"Hello\", n = 0 \n%s\n", concat);
 
 
 
