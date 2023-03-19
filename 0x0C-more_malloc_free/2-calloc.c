@@ -19,7 +19,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		for (i = 0; i <= nmemb * size - 1; i++)
 		{
-			*(pt + size) = 0;
+			*(pt + i) = 0;
 		}
 	}
 	else
