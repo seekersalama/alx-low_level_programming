@@ -7,33 +7,23 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *pt;
 	unsigned int i;
+	char *pt;
 
 	pt = NULL;
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	if (size == sizeof(char))
+
+	pt = malloc(nmemb * size);
+	if (pt != NULL)
 	{
-		char *pt = (char *) malloc(nmemb * size + 1);
-		if (pt != NULL)
+		for (i = 0; i <= nmemb * size - 1; i++)
 		{
-			for (i = 0; i < nmemb * size - 1; i++)
-				*(pt + i) = 0x00;
+			*(pt+size) = 0;
 		}
-		else
-		return (NULL);
 	}
-	if (size == sizeof(int))
-	{
-		int *pt = (int *) malloc(nmemb * size);
-		if (pt != NULL)
-		{
-			for (i = 0; i <= nmemb * size - 1; i++)
-				*(pt + i) = 0;
-		}
-		else
+	else
 		return (NULL);
-	}
-	return (pt);
+	return ((void *) pt);
 }
+

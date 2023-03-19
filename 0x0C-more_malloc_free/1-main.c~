@@ -36,7 +36,6 @@ int main(void)
 	printf("\nbefore 6\n");
 	concat = string_nconcat(NULL, "Hello", 0);
 	printf("6. %s\n", concat);
-	free(concat);
 
 
 

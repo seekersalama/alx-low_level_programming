@@ -19,7 +19,7 @@ int main(void)
 	printf("2. %s\n", concat);
 	free(concat);
 
-	concat = string_nconcat("Hello", "", 12);
+	concat = string_nconcat("","Hello", 12);
 	printf("3. %s\n", concat);
 	free(concat);
 
