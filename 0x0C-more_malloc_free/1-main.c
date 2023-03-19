@@ -20,22 +20,22 @@ int main(void)
 	free(concat);
 
 	concat = string_nconcat("","Hello", 12);
-	printf("3. %s\n", concat);
+	printf("3. s1="" %s\n", concat);
 	free(concat);
 
 
 	concat =  string_nconcat("Hello", NULL, 12);
-	printf("4. %s\n", concat);
+	printf("4. s2=NULL %s\n", concat);
 	free(concat);
 
 	concat = string_nconcat(NULL, NULL, 10);
-	printf("5. %s\n", concat);
+	printf("5. s1_s2=NULL %s\n", concat);
 	free(concat);
 
 
 	printf("\nbefore 6\n");
 	concat = string_nconcat(NULL, "Hello", 0);
-	printf("6. %s\n", concat);
+	printf("6. s1=NULL %s\n", concat);
 
 
 
