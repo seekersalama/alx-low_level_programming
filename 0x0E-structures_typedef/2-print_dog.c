@@ -1,4 +1,5 @@
 #include "dog.h"
+
 /**
  * print_dog - initialize the doc struct
  *@d: struct dog *
