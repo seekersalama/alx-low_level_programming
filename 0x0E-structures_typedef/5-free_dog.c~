@@ -1,0 +1,20 @@
+#include "dog.h"
+/**
+ * free_dog - free dog struct tyoe pointer
+ *@d: dog_t *
+ */
+
+void free_dog(dog_t *d)
+{
+	char * nm;
+	char *wn;
+	nm = &d->name;
+	wn = &d->owner;
+	if (d == NULL)
+		return;
+	free(d);
+	if (d->name != NULL)
+		free(nm);
+	if (d->owner != NULL)
+		free(wn);
+}
