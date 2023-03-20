@@ -1,6 +1,6 @@
 #include "dog.h"
 /**
- * init_dog - initialize the doc struct
+ * init_dog - initialize the dog struct
  *@d: struct dog *
  *@name: char *
  *@age: float

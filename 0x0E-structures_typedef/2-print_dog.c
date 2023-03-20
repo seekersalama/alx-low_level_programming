@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "dog.h"
+#include "main.h"
 /**
  * print_dog - initialize the doc struct
  *@d: struct dog *
@@ -9,7 +8,6 @@ void print_dog(struct dog *d)
 {
 	if (d == NULL)
 		return;
-
 	if (d->name == NULL)
 		printf("Name: (nil)");
 	else
