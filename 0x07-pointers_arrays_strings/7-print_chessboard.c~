@@ -9,8 +9,8 @@ void print_chessboard(char (*a)[8])
 {
 	unsigned int i, j;
 	unsigned int sz;
-	sz = sizeof(a);
 
+	sz = sizeof(a);
 	for (i = 0; i < sz; i++)
 	{
 		for (j = 0; j < 8; j++)

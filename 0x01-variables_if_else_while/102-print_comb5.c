@@ -21,7 +21,7 @@ int main(void)
 			{
 				for (q = '0'; q <= '9'; q++)
 				{
-					if ((n == m) && (p == q))
+					if ((n == m) && (p == q) && (n == p))
 						continue;
 					if ((n == p) && (m == p))
 						continue;

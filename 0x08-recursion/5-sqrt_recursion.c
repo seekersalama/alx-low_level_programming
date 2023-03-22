@@ -1,0 +1,20 @@
+/**
+ * _sqrt_recursion - check the code
+ *@n: int
+ * Return: int
+ */
+int i = 0;
+
+int _sqrt_recursion(int n)
+{
+	int sqrt;
+	if(i * i == n)
+	{
+		sqrt = i;
+			i = 0;
+		return (sqrt);
+	}if(i++ > n/2)
+	return (-1);
+	return _sqrt_recursion(n);
+
+}

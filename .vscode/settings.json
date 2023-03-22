@@ -1,0 +1,9 @@
+{
+	"editor.insertSpaces": true,
+	"editor.tabCompletion": "on",
+	"editor.tabSize": 5,
+	"editor.formatOnSave": true,
+	"files.autoSave": "onWindowChange",
+	"git.promptToSaveFilesBeforeCommit": "staged",
+	"workbench.editor.highlightModifiedTabs": true
+}

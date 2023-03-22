@@ -1,3 +1,4 @@
+#include "function_pointers.h"
 /**
  * print_name - check the code
  *@name: char *
@@ -5,8 +6,8 @@
  * Return: Nothing
  */
 
-
 void print_name(char *name, void (*f)(char *))
 {
-	f(name);
+	if(name != NULL)
+		f(name);
 }
