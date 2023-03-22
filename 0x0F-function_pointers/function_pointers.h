@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _MAIN_H
+#define _MAIN_H
 #include <stdio.h>
 #include <stddef.h>
 
@@ -8,6 +8,4 @@ void array_iterator(int *array, size_t size, void (*action)(int));
 int int_index(int *array, int size, int (*cmp)(int));
 
 
-
-
-#endif /* MAIN_H */
+#endif /* _MAIN_H */
