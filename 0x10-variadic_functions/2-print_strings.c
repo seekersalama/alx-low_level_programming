@@ -23,8 +23,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 				printf("%s", "(nil)");
 			else
 				printf("%s", temps);
-			if (separator != NULL && i < (int) n)
-				printf("%s", separator);
+			if (i < (int) n - 1)
+				if (separator != NULL)
+					printf("%s", separator);
 		}
 		va_end(ap);
 	}
